@@ -1,0 +1,5 @@
+package tt.android.downloader;
+
+public class HttpDownloader {
+
+}
