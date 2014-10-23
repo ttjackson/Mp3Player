@@ -15,27 +15,23 @@ public class FileUtils {
 		// TODO Auto-generated constructor stub
 		SDCardRoot = Environment.getExternalStorageDirectory()
 				.getAbsolutePath();
-		System.out.println(SDCardRoot);
 	}
 
 	public File createFileInSDCard(String filename, String dir)
 			throws IOException {
-		String tempString = SDCardRoot + File.separator + dir + File.separator + filename;
-		System.out.println(tempString);
-		File file = new File(SDCardRoot + File.separator + dir + File.separator + filename);
+		File file = new File(SDCardRoot + dir + File.separator + filename);
 		file.createNewFile();
 		return file;
 	}
 
 	public File createSDDir(String dir) {
-		System.out.println(SDCardRoot + File.separator + dir + File.separator);
-		File dirFile = new File(SDCardRoot + File.separator + dir + File.separator);
+		File dirFile = new File(SDCardRoot + dir + File.separator);
 		System.out.println(dirFile.mkdir());
 		return dirFile;
 	}
 
 	public boolean isFileExist(String fileName, String path) {
-		File file = new File(SDCardRoot + File.separator + path + File.separator + fileName);
+		File file = new File(SDCardRoot + path + File.separator + fileName);
 		return file.exists();
 	}
 

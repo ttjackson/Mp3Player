@@ -87,7 +87,7 @@ public class SonglistActivity extends Activity {
 
 				HttpDownloader httpDownloader = new HttpDownloader();
 				xml = httpDownloader
-						.download("http://192.168.1.14:8080/MP3Player/resources.xml");
+						.download("http://10.116.14.195:8080/MP3Player/resources.xml");
 				System.out.println(xml);
 				Message msg = myHandler.obtainMessage();
 				msg.sendToTarget();

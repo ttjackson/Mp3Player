@@ -36,7 +36,7 @@ public class DownloadService extends Service{
 			// TODO Auto-generated method stub
 			String urlString = "http://192.168.1.14:8080/MP3Player/" + songInfo.getSongName();
 			HttpDownloader httpDownloader = new HttpDownloader();
-			httpDownloader.downloadFile(urlString, "mp3", songInfo.getSongName());
+			httpDownloader.downloadFile(urlString, "mp3/", songInfo.getSongName());
 		}
 	}
 }

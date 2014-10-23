@@ -28,7 +28,6 @@ public class FileUtils {
 	}
 
 	public File createSDDir(String dir) {
-		System.out.println(SDCardRoot + File.separator + dir + File.separator);
 		File dirFile = new File(SDCardRoot + File.separator + dir + File.separator);
 		System.out.println(dirFile.mkdir());
 		return dirFile;
