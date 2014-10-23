@@ -1,6 +1,12 @@
 package tt.android.songentity;
 
-public class SongInfo {
+import java.io.Serializable;
+
+public class SongInfo implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String id;
 	private String songName;
 	private String songSize;

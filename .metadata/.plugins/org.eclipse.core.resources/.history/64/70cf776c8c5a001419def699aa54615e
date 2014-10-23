@@ -1,0 +1,5 @@
+package tt.android.service;
+
+public class DownloadService {
+
+}
