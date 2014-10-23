@@ -116,7 +116,7 @@ public class SonglistActivity extends Activity {
 		};
 	};
 	
-	public Handler downloadResultHandler = new Handler() {
+	Handler downloadResultHandler = new Handler() {
 		public void handleMessage(Message msg) {
 			NotificationManager nManager = (NotificationManager) SonglistActivity.this.getSystemService(Context.NOTIFICATION_SERVICE);
 			Notification notification = new Notification();
